@@ -1,0 +1,18 @@
+{
+  "name": "OSTest",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^10.0.0"
+  },
+  "dependencies": {
+    "@discordjs/collection": "^0.1.6"
+  }
+}

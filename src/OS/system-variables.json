@@ -1,0 +1,9 @@
+{
+    "startup": [
+        "OS/Programs/Interface"
+    ],
+    "background": {
+        "src": "OS/background.jpg",
+        "size": "cover"
+    }
+}

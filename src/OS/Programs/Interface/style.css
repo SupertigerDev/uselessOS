@@ -1,0 +1,20 @@
+:root {
+    --hover-color: rgba(43, 43, 43, 0.6);;
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+}
+body {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.desktop {
+    flex: 1;
+    flex-shrink: 0;
+}
+

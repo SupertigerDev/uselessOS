@@ -1,0 +1,63 @@
+:root {
+    --hover-color: rgba(43, 43, 43, 0.6);;
+}
+body, html {
+    margin: 0;
+    height: 100%;
+}
+body {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-bar {
+    display: flex;
+    height: 50px;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    overflow: hidden;
+    align-content: center;
+}
+.nav-bar .prg-list-button {
+    margin: 5px;
+    width: 50px;
+    height: calc(100% - 10px);
+    background-image:  url(../img/start-icon.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    border-radius: 4px;
+}
+.nav-bar .prg-list-button:hover {
+    background-image:  url(../img/start-icon-hover.png);
+    background-color: var(--hover-color);
+}
+.nav-bar .programs-list {
+    flex: 1;
+    height: 100%;
+}
+.nav-bar .date-time {
+    user-select: none;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-content: center;
+    align-items: center;
+    font-size: 12px;
+    flex-shrink: 0;
+
+    margin: 5px;
+    height: calc(100% - 10px);
+    border-radius: 4px;
+}
+.nav-bar .date-time:hover {
+    background: var(--hover-color);
+}
+.nav-bar .date-time .dot {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: white;
+}
