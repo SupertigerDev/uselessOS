@@ -50,7 +50,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 40%;
-    opacity: 0.7;
+    opacity: 0.4;
 }
 .window .title-bar .buttons .button.maximize {
     background-image: url(../img/border-icons/maximize.png);
