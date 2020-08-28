@@ -5,7 +5,11 @@ const fs = top.require('fs');
 const filesListDiv = document.getElementById("files-list");
 
 
-loadFolder(top.os_path);
+
+setTimeout(() => {
+    loadFolder(top.os_path);
+}, 500);
+
 
 
 async function loadFolder(_path) {
@@ -24,7 +28,9 @@ document.body.addEventListener('dblclick', event => {
 })
 
 async function getFolderFiles(_path) {
+    console.log("awaiting")
     const files = await readDirAsync(_path);
+    console.log(files)
     return await Promise.all(files.map(async fileName => {
         const filePath = path.join(_path, fileName);
         let json = {
@@ -56,8 +62,11 @@ function createFileElement({isFolder, fileName}) {
 function readDirAsync(_path) {
     return new Promise((res, rej) => {
         fs.readdir(_path, (err, files) => {
-            if (err) return rej(err);
-            else return res(files);
+            if (err) {
+                rej(err);
+                return
+            }
+            else res(files);
         })
     })
 }
