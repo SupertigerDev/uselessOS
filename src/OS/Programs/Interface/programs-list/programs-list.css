@@ -90,7 +90,7 @@ body, html {
 }
 .content .apps-list .app .icon { 
     font-size: 40px;
-    background-image: url(../img/placeholder-no-program-icon.png);
+    background-image: url(../img/file.png);
     background-size: contain;
     height: 40px;
     width: 40px;

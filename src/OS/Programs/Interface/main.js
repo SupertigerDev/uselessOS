@@ -25,7 +25,7 @@ exports.main = (program) => {
 
     // open file browser
     program.openWindow(__dirname + "/file-manager/file-manager.html", {title: "File Browser", bottom:"100px", left: "20px", width: "900px", backgroundBlur: true});
-    program.openWindow(__dirname + "/file-manager/file-manager.html", {title: "File Browser2", bottom:"200px", left: "500px", width: "900px", backgroundBlur: true});
+    // program.openWindow(__dirname + "/file-manager/file-manager.html", {title: "File Browser2", bottom:"200px", left: "500px", width: "900px", backgroundBlur: true});
 }
 
 
